@@ -34,7 +34,12 @@ Ps: Já deixei configurado para utilizar o serviço do próprio docker compose, 
 ## Instalação e configuração local com Docker
 Para utilizar o Docker, acesse a raiz do projeto e execute o comando abaixo:
 
+Clone o repositório:
+```bash
+git clone git@github.com:daniel-guimaraess/backend-wattio.git
+```
 
+Execute o compose:
 ```bash
 docker compose up
 ```
@@ -49,6 +54,11 @@ Utilizei o script **entrypoint.sh** para executar os comandos dentro do containe
 Para utilizar a API sem o container Docker, acesse a raiz do projeto e execute os comandos abaixo:
 
 Altere .env.example para .env e configure com as informações do seu banco de dados
+
+Clone o repositório:
+```bash
+git clone git@github.com:daniel-guimaraess/backend-wattio.git
+```
 
 **Criar ambiente virtual:**
 
