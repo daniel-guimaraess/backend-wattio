@@ -17,7 +17,15 @@ O desafio consiste em implementar um CRUD de filmes, utilizando python integrand
 
 - Criei um Seeder para popular o banco com alguns filmes para o teste
 
-- Escrevi os endpoints em inglês, porém mais por costume e padronização.
+- Escrevi os endpoints em inglês, porém mais por costume e padronização
+
+## Rotas desenvolvidas
+ 
+- **GET** - /api/v1/movies -> Retorna a lista de todos os filmes cadastrados
+- **GET** - /api/v1/movies/{movie_id} -> Retorna os dados de um filme específico pelo ID ou retorna 404 caso ele não seja encontrado
+- **POST** - /api/v1/movies -> Cadastra um novo filme no banco
+- **PUT** - /api/v1/movies/{movie_id} -> Atualiza um filme no banco pelo ID ou retorna 404 caso ele não exista
+- **DELETE** - /api/v1/movies/{movie_id} -> Remove um filme do banco pelo ID ou retorna 404 caso ele não exista
 
 ## Variáveis de ambiente
 Para as variáveis de ambiente eu criei o .env.example (docker compose puxará as informações dele), no nosso caso usaremos somente a URL para conexão com o banco de dados sendo **DATABASE_URL**.<br><br>
@@ -60,16 +68,14 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+**Seeder para popular banco com filmes:**
+
+```bash
+python3 -m app.seeders.seed
+```
+
 **Iniciar servidor:**
 
 ```bash
 uvicorn app.main:app --reload --port 8090
 ```
-
-## Rotas desenvolvidas
- 
-- **GET** - /api/v1/movies -> Retorna a lista de todos os filmes cadastrados
-- **GET** - /api/v1/movies/{movie_id} -> Retorna os dados de um filme específico pelo ID ou retorna 404 caso ele não seja encontrado
-- **POST** - /api/v1/movies -> Cadastra um novo filme no banco
-- **PUT** - /api/v1/movies/{movie_id} -> Atualiza um filme no banco pelo ID ou retorna 404 caso ele não exista
-- **DELETE** - /api/v1/movies/{movie_id} -> Remove um filme do banco pelo ID ou retorna 404 caso ele não exista
