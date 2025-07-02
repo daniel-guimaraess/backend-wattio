@@ -1,4 +1,4 @@
-# Desafio Backed Wattio
+# Desafio Backend Wattio
 
 ## Descrição
 O desafio consiste em implementar um CRUD de filmes, utilizando python integrando com uma API REST e uma possível persistência de dados.
