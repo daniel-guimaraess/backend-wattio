@@ -40,6 +40,8 @@ Utilizei o script **entrypoint.sh** para executar os comandos dentro do containe
 ## Instalação e configuração local sem docker
 Para utilizar a API sem o container Docker, acesse a raiz do projeto e execute os comandos abaixo:
 
+Altere .env.example para .env e configure com as informações do seu banco de dados
+
 **Criar ambiente virtual:**
 
 ```bash
