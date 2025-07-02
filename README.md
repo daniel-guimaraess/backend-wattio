@@ -17,6 +17,8 @@ O desafio consiste em implementar um CRUD de filmes, utilizando python integrand
 
 - Criei um Seeder para popular o banco com alguns filmes para o teste
 
+- Escrevi os endpoints em inglês, porém mais por costume e padronização.
+
 ## Variáveis de ambiente
 Para as variáveis de ambiente eu criei o .env.example (docker compose puxará as informações dele), no nosso caso usaremos somente a URL para conexão com o banco de dados sendo **DATABASE_URL**.<br><br>
 Ps: Já deixei configurado para utilizar o serviço do próprio docker compose, então já esta pronto para o teste (Não recomendado em produção, fiz apenas para o teste ser mais simples)
