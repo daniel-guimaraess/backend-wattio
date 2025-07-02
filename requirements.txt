@@ -1,7 +1,6 @@
 fastapi[standard]==0.115.6
-mysql-connector-python
+cryptography
 python-dotenv
 pydantic-settings
-gunicorn
 sqlalchemy
 pymysql
