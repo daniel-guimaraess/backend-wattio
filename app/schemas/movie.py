@@ -10,6 +10,10 @@ class MovieCreate(MovieBase):
     pass
 
 
+class MovieUpdate(MovieBase):
+    pass
+
+
 class MovieRead(MovieBase):
     id: int
     
